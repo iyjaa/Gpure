@@ -1,2 +1,2 @@
 # Gpure
-a tool that provides AI model training transfer features with free cloud gpu services available
+A CLI tool to seamlessly migrate AI training sessions across free cloud GPU providers.
