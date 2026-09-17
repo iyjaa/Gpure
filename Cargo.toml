@@ -2,7 +2,7 @@
 name = "gpure"
 version = "0.1.0"
 edition = "2021"
-description = "A CLI tool to seamlessly migrate AI training sessions across free cloud GPU providers."
+description = "General Purpose Rust Environment."
 license = "MIT"
 
 [dependencies]
