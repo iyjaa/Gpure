@@ -2,7 +2,7 @@
 name = "gpure-core"
 version = "0.1.0"
 edition = "2021"
-description = "Core utility library for the Gpure ecosystem (Lodash-like helpers)"
+description = "Core utility library for the Gpure ecosystem"
 license = "MIT"
 authors = ["izra mulya putra guzman < izramulyaputra@gmail.com >"]
 
