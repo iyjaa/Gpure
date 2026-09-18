@@ -1,0 +1,12 @@
+[package]
+name = "gpure-core"
+version = "0.1.0"
+edition = "2021"
+description = "Core utility library for the Gpure ecosystem (Lodash-like helpers)"
+license = "MIT"
+authors = ["izra mulya putra guzman < izramulyaputra@gmail.com >"]
+
+[dependencies]
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
