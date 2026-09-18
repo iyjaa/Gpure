@@ -1,8 +1,7 @@
-[package]
-name = "gpure"
-version = "0.1.0"
-edition = "2021"
-description = "General Purpose Rust Environment."
-license = "MIT"
-
-[dependencies]
+[workspace]
+members = [
+    "crates/gpure-core",
+    # "crates/gpure-net",
+    # "crates/gpure-api",
+]
+resolver = "2"
