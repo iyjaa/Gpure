@@ -1,7 +1,7 @@
 use std::collections::{HashMap, HashSet};
 use std::hash::Hash;
 
-pub fn chunk<T>(slice: &[T], size: usize) -> Vec<Vec<&T>> {
+pub fn chunk<T: Clone>(slice: &[T], size: usize) -> Vec<Vec<T>> {
     if size == 0 {
         return vec![];
     }
@@ -19,18 +19,15 @@ pub fn uniq<T: Eq + Hash + Clone>(slice: &[T]) -> Vec<T> {
     result
 }
 
-pub fn group_by<T, K, F>(slice: &[T], key_fn: F) -> HashMap<K, Vec<&T>>
-where
-    K: Eq + Hash,
-    F: Fn(&T) -> K,
-{
+pub fn group_by<T: Clone, K: Eq + Hash, F: Fn(&T) -> K>(slice: &[T], key_fn: F) -> HashMap<K, Vec<T>> {
     let mut map = HashMap::new();
     for item in slice {
         let key = key_fn(item);
-        map.entry(key).or_insert_with(Vec::new).push(item);
+        map.entry(key).or_insert_with(Vec::new).push(item.clone());
     }
     map
 }
+
 
 #[cfg(test)]
 mod tests {
@@ -38,12 +35,12 @@ mod tests {
 
     #[test]
     fn test_chunk_normal() {
-        let data = vec![1, 2, 3, 4, 5];
-        let result = chunk(&data, 2);
-        assert_eq!(result.len(), 3);
-        assert_eq!(result[0], vec![&1, &2]);
-        assert_eq!(result[1], vec![&3, &4]);
-        assert_eq!(result[2], vec![&5]);
+      let data = vec![1, 2, 3, 4, 5];
+      let result = chunk(&data, 2);
+      assert_eq!(result.len(), 3);
+      assert_eq!(result[0], vec![1, 2]);
+      assert_eq!(result[1], vec![3, 4]);
+      assert_eq!(result[2], vec![5]);
     }
 
     #[test]
