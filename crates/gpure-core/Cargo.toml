@@ -9,13 +9,14 @@ authors = ["izra mulya putra guzman < izramulyaputra@gmail.com >"]
 [dependencies]
 serde = { version = "1", features = ["derive"], optional = true }
 serde_json = { version = "1", optional = true }
-toml = { version = "0.8", optional = true }
+toml = { version = "0.8.20", optional = true } # Update ke 0.8.20+ untuk fix kompatibilitas
+indexmap = "=2.7.1"
 
 [dev-dependencies]
-criterion = { version = "0.5", features = ["html_reports"] }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
-toml = "0.8"
+toml = "0.8.20"
+indexmap = "=2.7.1"
 
 [features]
 fs = ["dep:serde", "dep:serde_json", "dep:toml"]

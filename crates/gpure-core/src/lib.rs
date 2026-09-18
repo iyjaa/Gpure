@@ -1,13 +1,13 @@
 pub mod math;
 pub mod strings;
-pub mod collections;
+pub mod collection;
 
 #[cfg(feature = "fs")]
 pub mod fs;
 
 pub use math::*;
 pub use strings::*;
-pub use collections::*;
+pub use collection::*;
 
 #[cfg(feature = "fs")]
 pub use fs::*;
