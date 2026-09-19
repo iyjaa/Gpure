@@ -17,6 +17,10 @@ name = "gpure-bundler"
 version = "0.1.0"
 
 [[package]]
+name = "gpure-cli"
+version = "0.1.0"
+
+[[package]]
 name = "gpure-core"
 version = "0.1.0"
 dependencies = [
