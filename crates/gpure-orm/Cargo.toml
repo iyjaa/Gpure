@@ -1,0 +1,9 @@
+[package]
+name = "gpure-orm"
+version = "0.1.0"
+edition = "2021"
+description = "Orm library for the Gpure ecosystem"
+license = "MIT"
+authors = ["izra mulya putra guzman < izramulyaputra@gmail.com >"]
+
+[dependencies]
