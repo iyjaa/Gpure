@@ -31,10 +31,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "gpure-net"
-version = "0.1.0"
-
-[[package]]
 name = "gpure-orm"
 version = "0.1.0"
 

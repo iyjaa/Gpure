@@ -1,7 +1,6 @@
 [workspace]
 members = [
     "crates/gpure-core",
-    "crates/gpure-net",
     "crates/gpure-api",
     "crates/gpure-bundler",
     "crates/gpure-orm",
