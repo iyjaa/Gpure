@@ -1,0 +1,7 @@
+[package]
+name = "gpure-log"
+version = "0.1.0"
+edition = "2024"
+description = "raw log converter just got more intuitive"
+
+[dependencies]

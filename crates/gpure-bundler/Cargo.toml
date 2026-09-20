@@ -1,7 +1,7 @@
 [package]
 name = "gpure-bundler"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 description = "bundler library for the Gpure ecosystem"
 license = "MIT"
 authors = ["izra mulya putra guzman < izramulyaputra@gmail.com >"]

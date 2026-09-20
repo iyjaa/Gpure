@@ -4,6 +4,6 @@ members = [
     "crates/gpure-api",
     "crates/gpure-bundler",
     "crates/gpure-orm",
-    "crates/gpure-cli",
+    "crates/gpure-cli", "crates/gpure-types", "crates/gpure-log",
 ]
 resolver = "2"
